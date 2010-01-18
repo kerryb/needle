@@ -1,0 +1,3 @@
+class NeedleFinder {
+def find = ""
+}
