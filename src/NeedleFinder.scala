@@ -1,3 +1,3 @@
-class NeedleFinder {
-def find = ""
+class NeedleFinder(input: String) {
+  def find = ""
 }
