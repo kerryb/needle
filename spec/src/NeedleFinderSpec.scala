@@ -6,8 +6,16 @@ class NeedleFinderSpec extends Spec with ShouldMatchers {
     describe("in an empty haystack") {
       val finder = new NeedleFinder("")
 
-      it("Returns an empty result") {
+      it("returns an empty result") {
         finder.find should equal("")
+      }
+    }
+
+    describe("when there is an exact match") {
+      val finder = new NeedleFinder("3\nfoo\nfoo")
+
+      it("finds a match at 0") {
+        finder.find should equal("0")
       }
     }
   }
